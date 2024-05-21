@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+.menu{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    padding: 60px 0;
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+body{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.menu__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+}
+html{
+    box-sizing: border-box;
+}
+
+.top__layer{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    animation: fade-animation-name linear;
+    animation-timeline: scroll();
+    animation-timeline: scroll(scroller axis);
+
+
+}
+@keyframes top-layer-5 {
+    to{
+        scale: 1.25;
+    }
+}
+.top__layer--5 {
+    animation-name: top-layer-5;
+}
+@keyframes top-layer-4 {
+    to{
+        scale: 1.35;
+    }
+}
+.top__layer--4{
+    animation-name: top-layer-4;
+}
+@keyframes top-layer-3 {
+    to{
+        scale: 1.5;
+    }
+}
+
+.top__layer--3{
+    animation-name: top-layer-3;
+}
+@keyframes top-layer-2 {
+    to{
+        scale: 3;
+    }
+}
+
+.top__layer--2{
+    animation-name: top-layer-2;
+}
+
+@keyframes top-layer-1 {
+    to{
+        scale: 4;
+    }
+}
+.top__layer--1{
+    animation-name: top-layer-1;
+}
